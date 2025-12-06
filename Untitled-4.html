@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Rocket Science & Physics Blog Demo</title>
+    <style>
+        body { font-family:sans-serif;margin:20px;line-height:1.6;}
+        section { margin-bottom:30px;padding:15px;border:1px solid;border-radius:5px;}
+        h2 { color:#cc0000;border-bottom:2px solid#cc0000;padding-bottom: 5px;}
+        table, th, td{border:1px solid #ccc;border-collapse:collapse;padding:8px;text-align:left;}
+        a { text-decoration:none;color:navy;}
+        .inline-demo > *{ margin-right: 15px;}
+        .profile-img { width:80px; height:80px;border-radius:50%;object-fit:cover;float:left; margin-right:15px;}
+    </style>
+</head>
+<body>
+    <hr>
+    <hr>
+    <header>
+        <h1>AstroDynamics:The Physics of Flight</h1>
+        <p>A demonstration of headings (h1-h6),paragraphs,and horizontal rules for a science publication.</p>
+        <hr>
+        <hr>
+        <h2>The Foundation of Flight</h2>
+        <p>This page uses semantic tags like100$\text{<header>}200$,200 $\text{<section>}34$,and100$\text{<footer>}10$ to structure the content.</p>
+    </header>
+    <hr>
+    <hr>
+    <section id="basics">
+        <h2>1. Key Concepts & Formulas</h2>
+        <p>The Thrust-to-Weight Ratio** is critical. We often refer to <mark>Newton's Laws</mark>. See the <a href="https://www.flipkart.com/"target="_blank">NASA website</a>for more details.</p>
+        <hr>
+        <hr>
+        <div class="inline-demo">
+            <img src="https://www.amazon.in/" alt="Dr.Evelyn Reed, Astrophysicist" class="profile-img">
+            <h3>Dr. Evelyn Reed, Lead Astrophysicist</h3>
+            <p>I specialize in orbital mechanics and propulsion systems.</p>
+        </div>
+    </section>
+    <section id="lists">
+        <h2>2. Orbital Lists and Definitions</h2>
+        <hr>
+        <hr>
+        <h3>Ordered List (Launch Sequence)</h3>
+        <ol>
+            <li>T-10: Ignition Sequence Start</li>
+            <li>T-0: Liftoff and Roll Maneuver</li>
+            <li>Staging 1:Core Stage Separation</li>
+            <li>Orbit Insertion(Target Apogee)</li>
+        </ol>
+        <hr>
+        <hr>
+        <h3>Unordered List (Required Materials)</h3>
+        <ul>
+            <li>Liquid Oxygen (LOX)</li>
+            <li>RP-1 Kerosene</li>
+            <li>High-Strength Aluminum Alloys</li>
+        </ul>
+        <hr>
+        <hr>
+        <h3>Definition List(Glossary)</h3>
+        <dl>
+            <dt>Delta-V (200$\Delta V100$)</dt>
+            <dd>A measure of the impulse required to perform a maneuver.</dd>
+            <dt>Specific Impulse (100$I_{sp}200$)</dt>
+            <dd>A measure of the efficiency of a rocket engine.</dd>
+        </dl>
+    </section>
+    <section id="tables">
+        <h2>3. Data Tables: Rocket Stages</h2>
+        <h3>Rocket Stage Performance</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Stage</th>
+                    <th>Engine Type</th>
+                    <th>Burn Time(s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>First Stage</td>
+                    <td>Merlin 1D</td>
+                    <td>162</td>
+                </tr>
+                <tr>
+                    <td colspan="3"style="text-align: center;">ENGINE CUTOFF & SEPARATION</td>
+                </tr>
+                <tr>
+                    <td>Second Stage</td>
+                    <td>Vacuum Merlin</td>
+                    <td rowspan="2">380</td>
+                </tr>
+                <tr>
+                    <td>Payload Fairing</td>
+                    <td>N/A</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="forms">
+        <h2>4. User Forms & flipkart</h2>
+        <form action="/submit-feedback" method="post">
+            <label for="user-name">Your Name:</label>
+            <input type="text"id="user-name"name="user-name"required><br><br>
+            <label for="user-email">Your Email:</label>
+            <input type="email" id="user-email" name="user-email"><br><br>
+            <label for="topic-interest">Rating of this Post (1-5):</label>
+            <input type="range"id="topic-interest"name="rating" min="1"max="5"value="5"><br><br>
+            <label for="topic-select">Primary Interest:</label>
+            <select id="topic-select"name="topic">
+                <optgroup label="Propulsion">
+                    <option value="chemical"selected>Chemical Rockets</option>
+                    <option value="ion">Ion Thrusters</option>
+                </optgroup>
+                <optgroup label="Mechanics">
+                    <option value="orbital">Orbital Mechanics</option>
+                    <option value="relativity">Special Relativity</option>
+                </optgroup>
+            </select><br><br>
+            <hr>
+            <button type="submit">Submit Feedback</button> 
+            <button type="reset">Clear Entries</button>
+        </form>
+    </section>
+    <footer>
+        <p><small>&copy; 2025 AstroDynamics.Fueling your curiosity.</small></p>
+    </footer>
+</body>
+</html>
